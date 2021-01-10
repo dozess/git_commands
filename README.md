@@ -42,8 +42,8 @@ and copy all file content to the github key, and name it
 
 first time conecting to the repository from your local git server will exchange keys and will ask you to trust it. 
 
-
-## linking local git to GitHub
+----
+## Linking local git to GitHub
 
 on the local git repositori create link to remote git 
 
