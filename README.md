@@ -21,10 +21,29 @@ Also for first time use on machine you need to st up your user
   `git config --global user.name "Your Name"`
 
 ----
-
 ## Setting remote repository in GitHub
 
 Create new repository in GitHub 
+setting up ssh keypair authentification is comfortable option to work on linux machines commandprompt
+
+to generate keypair on your linux machine generaite caypair:
+
+`ssh-keygen -t ed25519 -C "your_email@example.com"`
+
+then on github on your repository settings chose 
+
+> Deploy keys
+
+and add new key.
+
+on linux machine enter command `cat ~/.ssh/'your key name'.pub`
+
+and copy all file content to the github key, and name it
+
+first time conecting to the repository from your local git server will exchange keys and will ask you to trust it. 
+
+
+## linking local git to GitHub
 
 on the local git repositori create link to remote git 
 
