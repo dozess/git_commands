@@ -51,6 +51,9 @@ on the local git repositori create link to remote git
 
 'origin' is name of remote repository it can be any name, but the common, agreed-upon convention is to call a repository's main remote connection "origin" 
 
+----
+Other misc commands.
+
 You can include the branch to track when setting up remotes, to keep things working as you might expect:
 
 git remote add --track master origin user@somesite.com:group/project.git   # git
