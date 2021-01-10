@@ -14,21 +14,36 @@ after changing filess : `git add .`, `git commit -m "commit message"`
 
 special file `.gitignore` containing list of ignored files and directories one per line. Filess listed in `.gitignore` will not be aded to git with `git add .`  
 
+Also for first time use on machine you need to st up your user
+
+  `git config --global user.email "you@example.com"`
+  
+  `git config --global user.name "Your Name"`
+
 ----
 
 ## Setting remote repository in GitHub
 
 Create new repository in GitHub 
 
+on the local git repositori create link to remote git 
 
+`git remote add origin 'repository url'` 
+
+'origin' is name of remote repository it can be any name, but the common, agreed-upon convention is to call a repository's main remote connection "origin" 
 
 You can include the branch to track when setting up remotes, to keep things working as you might expect:
 
 git remote add --track master origin user@somesite.com:group/project.git   # git
+
 git remote add --track master origin user@172.16.1.100:group/project.git   # git w/IP
+
 git remote add --track master origin http://github.com/group/project.git   # http
+
 git remote add --track master origin http://172.16.1.100/group/project.git # http w/IP
+
 git remote add --track master origin /Volumes/Git/group/project/           # local
+
 git remote add --track master origin G:/group/project/                     # local, Win
 
 
